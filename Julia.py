@@ -137,6 +137,7 @@ if __name__ == '__main__':
 	'''
 	for z_value in collection_of_julia_sets:
 		julia.set_constant(z_value)
+		julia.set_resolution(3000)
 		julia.set_color_map('PRGn_r')
 		julia.plot() 
 	

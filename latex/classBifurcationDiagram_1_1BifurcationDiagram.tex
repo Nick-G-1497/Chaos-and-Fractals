@@ -1,0 +1,61 @@
+\hypertarget{classBifurcationDiagram_1_1BifurcationDiagram}{}\doxysection{Bifurcation\+Diagram.\+Bifurcation\+Diagram Class Reference}
+\label{classBifurcationDiagram_1_1BifurcationDiagram}\index{BifurcationDiagram.BifurcationDiagram@{BifurcationDiagram.BifurcationDiagram}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a624d59880966656ca07216a8b1b6cead}\label{classBifurcationDiagram_1_1BifurcationDiagram_a624d59880966656ca07216a8b1b6cead}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classBifurcationDiagram_1_1BifurcationDiagram_a6294f4a957f58e62c53d719afc3a5e5c}{get\+\_\+rate\+\_\+space}} (self)
+\item 
+def \mbox{\hyperlink{classBifurcationDiagram_1_1BifurcationDiagram_a55b78fadf5962ec5fa210231c5b319cc}{logistic\+\_\+equation}} (self, r, x)
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a26b6e9a5c09bf4543d7c9b761294e17a}\label{classBifurcationDiagram_1_1BifurcationDiagram_a26b6e9a5c09bf4543d7c9b761294e17a}} 
+def {\bfseries plot} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a4350963e72cb79a2f293306ce51a0b26}\label{classBifurcationDiagram_1_1BifurcationDiagram_a4350963e72cb79a2f293306ce51a0b26}} 
+{\bfseries rate\+\_\+space}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a1de78d58875099afed343e4230c3acbf}\label{classBifurcationDiagram_1_1BifurcationDiagram_a1de78d58875099afed343e4230c3acbf}} 
+int {\bfseries resolution} = 500
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_ad5de060cf8a3f36cc55350ab1d587201}\label{classBifurcationDiagram_1_1BifurcationDiagram_ad5de060cf8a3f36cc55350ab1d587201}} 
+int {\bfseries max\+\_\+itt} = 2000
+\item 
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_af14abb6691790ad38a328732a68fa6bf}\label{classBifurcationDiagram_1_1BifurcationDiagram_af14abb6691790ad38a328732a68fa6bf}} 
+int {\bfseries x0} = 10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Bifurcation Diagram is a class generated and used in order to investagate and explore the logistic map's bifurcation diagram\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a6294f4a957f58e62c53d719afc3a5e5c}\label{classBifurcationDiagram_1_1BifurcationDiagram_a6294f4a957f58e62c53d719afc3a5e5c}} 
+\index{BifurcationDiagram.BifurcationDiagram@{BifurcationDiagram.BifurcationDiagram}!get\_rate\_space@{get\_rate\_space}}
+\index{get\_rate\_space@{get\_rate\_space}!BifurcationDiagram.BifurcationDiagram@{BifurcationDiagram.BifurcationDiagram}}
+\doxysubsubsection{\texorpdfstring{get\_rate\_space()}{get\_rate\_space()}}
+{\footnotesize\ttfamily def Bifurcation\+Diagram.\+Bifurcation\+Diagram.\+get\+\_\+rate\+\_\+space (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Define a linear space of discrete numbers. Save into an itterable. This is basically the same thing as np.linspace() but not conbined to numpy types as it is an object in raw python \end{DoxyVerb}
+ \mbox{\Hypertarget{classBifurcationDiagram_1_1BifurcationDiagram_a55b78fadf5962ec5fa210231c5b319cc}\label{classBifurcationDiagram_1_1BifurcationDiagram_a55b78fadf5962ec5fa210231c5b319cc}} 
+\index{BifurcationDiagram.BifurcationDiagram@{BifurcationDiagram.BifurcationDiagram}!logistic\_equation@{logistic\_equation}}
+\index{logistic\_equation@{logistic\_equation}!BifurcationDiagram.BifurcationDiagram@{BifurcationDiagram.BifurcationDiagram}}
+\doxysubsubsection{\texorpdfstring{logistic\_equation()}{logistic\_equation()}}
+{\footnotesize\ttfamily def Bifurcation\+Diagram.\+Bifurcation\+Diagram.\+logistic\+\_\+equation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{r,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} This function returns the fundamental function which being called itteratively creates our fractal behavior 
+        
+        X_n+1 = rx(1 - x) \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bifurcation\+Diagram.\+py\end{DoxyCompactItemize}

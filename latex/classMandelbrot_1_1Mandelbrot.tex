@@ -1,0 +1,86 @@
+\hypertarget{classMandelbrot_1_1Mandelbrot}{}\doxysection{Mandelbrot.\+Mandelbrot Class Reference}
+\label{classMandelbrot_1_1Mandelbrot}\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_ac2d4ee5cf8de58a91e5b1b4a8a06df06}{optimized\+\_\+escape\+\_\+time}} (self, x0, y0)
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_a300ecf7a9d1caa57070cd99c79a686e0}{escape\+\_\+time}} (self, x0, j0)
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_a6de0b462c33df668e6c45a2ebce1a673}{plot\+\_\+optimized}} (self)
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_ad403dcaa071ecb3cadcc1c53309c9144}{plot}} (self)
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_a09f7dc1f1a84b933aa0afb44e211e159}{plot\+\_\+with\+\_\+color}} (self)
+\item 
+def \mbox{\hyperlink{classMandelbrot_1_1Mandelbrot_a16f6b8b8c37f07baf421e436cdf44de7}{color\+\_\+map}} (self, itt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a72ee8303a1a77f7838bda69bf4afaa1f}\label{classMandelbrot_1_1Mandelbrot_a72ee8303a1a77f7838bda69bf4afaa1f}} 
+int {\bfseries resolution} = 512
+\item 
+\mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_ae8542d4e2b68171a17748e8bcec62890}\label{classMandelbrot_1_1Mandelbrot_ae8542d4e2b68171a17748e8bcec62890}} 
+int {\bfseries max\+\_\+itt} = 1024
+\item 
+\mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_ad2b4061c0b1f6a1c88bff34c0e6cf7f7}\label{classMandelbrot_1_1Mandelbrot_ad2b4061c0b1f6a1c88bff34c0e6cf7f7}} 
+{\bfseries real\+\_\+axis} = np.\+linspace(-\/3, 3, resolution)
+\item 
+\mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a895a891a12a33af341f37351e292f81f}\label{classMandelbrot_1_1Mandelbrot_a895a891a12a33af341f37351e292f81f}} 
+{\bfseries imaginary\+\_\+axis} = np.\+linspace(-\/3, 3, resolution)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Modular class which allows the user to generate the Mandelbrot set\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a16f6b8b8c37f07baf421e436cdf44de7}\label{classMandelbrot_1_1Mandelbrot_a16f6b8b8c37f07baf421e436cdf44de7}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!color\_map@{color\_map}}
+\index{color\_map@{color\_map}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{color\_map()}{color\_map()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+color\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{itt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a color mapping from the escape time itteration\end{DoxyVerb}
+ \mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a300ecf7a9d1caa57070cd99c79a686e0}\label{classMandelbrot_1_1Mandelbrot_a300ecf7a9d1caa57070cd99c79a686e0}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!escape\_time@{escape\_time}}
+\index{escape\_time@{escape\_time}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{escape\_time()}{escape\_time()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+escape\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{j0 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the number of itterations it takes to blow up starting at a particular starting point\end{DoxyVerb}
+ \mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_ac2d4ee5cf8de58a91e5b1b4a8a06df06}\label{classMandelbrot_1_1Mandelbrot_ac2d4ee5cf8de58a91e5b1b4a8a06df06}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!optimized\_escape\_time@{optimized\_escape\_time}}
+\index{optimized\_escape\_time@{optimized\_escape\_time}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{optimized\_escape\_time()}{optimized\_escape\_time()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+optimized\+\_\+escape\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{y0 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Optimized Algorithm to determine if a numbe r escapes the set in a reasonably amount of itterations - optimization comes directly from wikipedia \end{DoxyVerb}
+ \mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_ad403dcaa071ecb3cadcc1c53309c9144}\label{classMandelbrot_1_1Mandelbrot_ad403dcaa071ecb3cadcc1c53309c9144}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!plot@{plot}}
+\index{plot@{plot}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{plot()}{plot()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+plot (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Plot using the complex data type built into python \end{DoxyVerb}
+ \mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a6de0b462c33df668e6c45a2ebce1a673}\label{classMandelbrot_1_1Mandelbrot_a6de0b462c33df668e6c45a2ebce1a673}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!plot\_optimized@{plot\_optimized}}
+\index{plot\_optimized@{plot\_optimized}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{plot\_optimized()}{plot\_optimized()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+plot\+\_\+optimized (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Plot using the optimized algorithm from wikipedia\end{DoxyVerb}
+ \mbox{\Hypertarget{classMandelbrot_1_1Mandelbrot_a09f7dc1f1a84b933aa0afb44e211e159}\label{classMandelbrot_1_1Mandelbrot_a09f7dc1f1a84b933aa0afb44e211e159}} 
+\index{Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}!plot\_with\_color@{plot\_with\_color}}
+\index{plot\_with\_color@{plot\_with\_color}!Mandelbrot.Mandelbrot@{Mandelbrot.Mandelbrot}}
+\doxysubsubsection{\texorpdfstring{plot\_with\_color()}{plot\_with\_color()}}
+{\footnotesize\ttfamily def Mandelbrot.\+Mandelbrot.\+plot\+\_\+with\+\_\+color (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Plot the Mandelbrot set and additionally add in some color shading to represent the speed at which the value exits the set\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Mandelbrot.\+py\end{DoxyCompactItemize}
